@@ -1,0 +1,130 @@
+<!-- Page header -->
+<div class="row content-header mb-4">
+  <div class="col-md-8">
+    <h1>Add New Contact</h1>
+  </div>
+</div>
+<!-- Page header -->
+<!-- Form container -->
+<div class="container">
+  <!-- Add Contact Details Form -->
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-10">
+      <div class="card card-primary card-outline">
+        <div class="card-header">
+          <h5 class="custom-secondary-color">Add Contact Details</h5>
+        </div>
+        <div class="card-body">
+          <form name="newPersonForm" class="needs-validation" novalidate>
+            <div class="row mb-2">
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label for="first_name">Title</label>
+                  <input type="text" class="form-control" name="title" placeholder="Mr/Mrs/Miss" />
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="form-group">
+                  <label for="first_name"><span class="text-red">*</span>First Name:</label>
+                  <input [(ngModel)]="fname" type="text" class="form-control" name="first_name" placeholder="First Name" required />
+                  <div class="invalid-feedback">
+                    Please enter first name.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="form-group">
+                  <label for="last_name"><span class="text-red">*</span>Last Name:</label>
+                  <input [(ngModel)]="fname" type="text" class="form-control" name="last_name" laceholder="Last Name" required />
+                  <div class="invalid-feedback">
+                    Please enter last name.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="mobile"><span class="text-red">*</span>Mobile1:</label>
+                  <input type="text" class="form-control" name="phone1" placeholder="9898989898" required />
+                  <div class="invalid-feedback">
+                    Please enter mobile number.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="mobile">Mobile2:</label>
+                  <input type="text" class="form-control" name="phone2" placeholder="9898989898" />
+                  <div class="invalid-feedback">
+                    Please enter mobile number.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-2">
+              <label for="email"><span class="text-red">*</span>Email:</label>
+              <input type="text" class="form-control" name="email" placeholder="test@test.com" required />
+              <div class="invalid-feedback">
+                <span>Please enter email address.</span>
+                <span>Please enter valid email address.</span>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-8">
+                <div class="form-group mb-2">
+                  <label for="address_line1"><span class="text-red">*</span>Address Line 1:</label>
+                  <input type="text" class="form-control" name="address_line1" placeholder="" required />
+                  <div class="invalid-feedback">
+                    Please enter address.
+                  </div>
+                </div>
+                <div class="form-group mb-2">
+                  <label for="address_line2">Address Line 2:</label>
+                  <input type="text" class="form-control" name="address_line2" placeholder="" />
+                </div>
+                <div class="form-group mb-2">
+                  <label for="address_line2"><span class="text-red">*</span>City:</label>
+                  <input type="text" class="form-control" name="address_city" placeholder="City" required />
+                  <div class="invalid-feedback">Please enter city.</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group mb-2">
+                  <label for="address_line2"><span class="text-red">*</span>State:</label>
+                  <input type="text" class="form-control" name="address_state" placeholder="" required />
+                  <div class="invalid-feedback">Please enter state.</div>
+                </div>
+                <div class="form-group mb-2">
+                  <label for="address_line2">Postal/Zip Code:</label>
+                  <input type="text" class="form-control" name="address_zip" placeholder="" />
+                </div>
+                <div class="form-group mb-2">
+                  <label for="address_line2"><span class="text-red">*</span>Country:</label>
+                  <input type="text" class="form-control" name="address_country" placeholder="" required />
+                  <div class="invalid-feedback">
+                    Please enter country.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-2">
+              <label for="note">Note:</label>
+              <textarea class="form-control" name="note" placeholder="Note"></textarea>
+            </div>
+            <div class="d-flex justify-content-between">
+              <button type="submit" class="btn custom-secondary-bg-color btn-sm">
+                Save
+              </button>
+              <button type="reset" class="btn btn-danger btn-sm">
+                Discard
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add Contact Details Form -->
+</div>
+<!-- Form container -->

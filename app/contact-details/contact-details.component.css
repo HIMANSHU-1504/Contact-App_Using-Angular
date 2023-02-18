@@ -1,0 +1,23 @@
+.profile-user-initial {
+    font-weight: 600;
+    font-size: 4rem;
+    color: #FFF;
+    background-color: #00A09D;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.profile-user-img {
+    border: 3px solid #adb5bd;
+    margin: 0 auto;
+    padding: 3px;
+    width: 100px;
+}
+.profile-username {
+    font-size: 21px;
+    margin-top: 5px;
+}
+.box-profile p {
+    margin-bottom: 0.2rem;
+}

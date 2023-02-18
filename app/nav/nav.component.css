@@ -1,0 +1,7 @@
+.navbar{
+    padding:0;
+}
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
+    padding: 0;
+}

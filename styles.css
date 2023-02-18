@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-size: 14px;
+  background: #f4f6f9;
+}
+.custom-primary-color{
+    color: #875A7B;
+    border-color: #68465f;
+}
+.custom-primary-bg-color{
+    color: #FFF;
+    background-color: #875A7B;
+    border-color: #68465f;
+}
+.custom-secondary-color{
+    color: #00A09D;
+    border-color: #00A09D;
+}
+.custom-secondary-bg-color{
+    color: #FFF;
+    background-color: #00A09D;
+    border-color: #00A09D;
+}
+button.custom-secondary-bg-color:hover{
+    color: #FFF;
+    background-color: #008a87;
+    border-color: #008a87;
+}
+a {
+    color: #00A09D;
+    text-decoration: none;
+}
+a:hover {
+    color: #008a87;
+}
+i {
+    width: 1rem;
+}
+
+.content-wrapper{
+    background: #f4f6f9;
+}
+.content-header {
+    padding-top: 3rem;
+    background-color: #FFF;
+    border-bottom: 1px solid #dee2e6;
+}
+.content-header h1 {
+    color: #00A09D;
+    font-size: 1.8rem;
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+.card {
+    box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+    margin-bottom: 1rem;
+}
+.card-header h5{
+    margin-bottom: 0;
+}
+.card-primary.card-outline {
+    border-top: 3px solid #00A09D;
+}
+
+.text-red{
+    color:#F00;
+}

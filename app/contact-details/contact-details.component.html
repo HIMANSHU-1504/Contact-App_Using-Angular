@@ -1,0 +1,64 @@
+<!-- Page header -->
+<div class="row content-header mb-4">
+  <div class="col-md-8">
+    <h1>Contact Details</h1>
+  </div>
+</div>
+<!-- Page header -->
+<!-- Details container -->
+<div class="container">
+  <!-- Contact Details -->
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card card-primary card-outline">
+        <div class="card-body box-profile">
+          <div class="d-flex justify-content-center">
+            <div class="profile-user-initial d-flex justify-content-center">R</div>
+          </div>
+          <h3 class="profile-username text-center custom-secondary-color">{{contact.titile}} {{contact.first_name}} {{contact.last_name}}</h3>
+          <p class="text-muted text-center">
+            <strong>Email</strong><br />{{contact.email}}
+          </p>
+          <p class="text-muted d-flex justify-content-between">
+            <b>Mobile1</b> <span class="float-right">{{contact.phone1}}</span>
+          </p>
+          <p class="text-muted d-flex justify-content-between">
+            <b>Mobile2</b> <span class="float-right">{{contact.phone2}}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card card-primary card-outline">
+        <div class="card-header d-flex justify-content-between">
+          <h5 class="custom-secondary-color">Other Details</h5>
+          <div>
+            <button [routerLink]="/edit" class="btn custom-secondary-bg-color btn-sm mr-2">
+              Edit
+            </button>
+            <button [disabled]="haveRights" class="btn btn-danger btn-sm">Delete</button>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              <h6><i class="fa fa-address-card"></i> Address:</h6>
+              <p class="text-muted mb-0">{{contact.address.line1}}</p>
+              <p class="text-muted mb-0">{{contact.address.line2}}</p>
+              <p class="text-muted mb-0">{{contact.address.city}}</p>
+              <p class="text-muted mb-0">{{contact.address.state}}</p>
+              <p class="text-muted mb-0">{{contact.address.zip}}</p>
+              <p class="text-muted">{{contact.address.country}}</p>
+            </div>
+            <div class="col-md-8">
+              <h6><i class="fa fa-sticky-note"></i> Note</h6>
+              <p class="text-muted">{{contact.note}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Details -->
+</div>
+<!-- Details container -->

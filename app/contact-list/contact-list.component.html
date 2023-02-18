@@ -1,0 +1,76 @@
+<!-- Page header -->
+<div class="row content-header mb-4">
+  <div class="col-md-8">
+    <h1>Contact List</h1>
+  </div>
+</div>
+<!-- Page header -->
+
+<!-- Contact Cards -->
+<div class="row d-flex align-items-stretch">
+  <div *ngFor="let contact of contactList" class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch mb-2">
+    <div class="card contact-card overflow-hidden">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-4 text-center initials">
+            <h1>D</h1>
+          </div>
+          <div class="col-8">
+            <h2 class="lead text-truncate">`1
+              <a routerLink="['/details',contact.id]"><b>{{contact.title}} {{contact.first_name}} {{contact.last_name}}</b></a>
+            </h2>
+            <p class="text-muted text-sm text-truncate">
+              <i class="fa fa-envelope"></i> {{contact.email}}
+            </p>
+            <p class="text-muted text-sm text-truncate">
+              <i class="fa fa-mobile"></i> {{contact.phone1}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Cards -->
+
+<!-- Contact Table -->
+<!-- <div class="card card-primary card-outline mb-4">
+  <div class="card-header">
+    <h5 class="custom-secondary-color">Contact List</h5>
+  </div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th class="activeHeader">Person</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contactList; let i=index">
+        <td>{{i}}</td>
+        <td>{{contact.title}} {{contact.first_name}} {{contact.last_name}}</td>
+        <td>{{contact.address.city}}</td>
+        <td>{{contact.address.state}}</td>
+        <td>{{contact.address.country}}</td>
+        <td width="150px">
+          <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-sm custom-secondary-bg-color" title="Details">
+              <i class="fa fa-id-card"></i>
+            </button>
+            <button type="button" class="btn btn-sm btn-warning" title="Edit">
+              <i class="fa fa-edit"></i>
+            </button>
+            <button type="button" class="btn btn-sm btn-danger" title="Delete">
+              <i class="fa fa-trash"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->
+<!-- Contact Table -->
